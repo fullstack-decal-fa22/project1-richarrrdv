@@ -131,7 +131,7 @@ img {
 }
 * {
     box-sizing: border-box;
-    font-family: myFirstFont;
+    font-family: myFirstFont, serif;
 }
 html, body, div, img {
     margin: 0;
