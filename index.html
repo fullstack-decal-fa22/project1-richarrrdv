@@ -4,86 +4,123 @@
         <meta name="author" content="Richard Villagomez">
         <title>Richard's Personal Website</title>
         <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
         <style>
+          @font-face {
+          font-family: myFirstFont;
+          src: url(Baskerville.ttc);
+          }
+
+div {
+  font-family: myFirstFont;
+}
           #para{
              text-align: center;
-             font-size: 50px;
-             font-family: Georgia, 'Times New Roman', Times, serif;
-             font-style: italic;
+             font-size: 70px;
+             font-family: myFirstFont, serif;
+             line-height: 2;
           }
+          body {
+              background-image: url('wp2.png');
+}
         
        </style>
+       
     
     </head>
     <body>
-      <header>
-        <div class="navbar">
-            <a href="index.html" class="nav-item" id="nav-emphasis"> about </a>
-            <a href="work.html" class="nav-item"> work </a>
-            <a href="contact.html" class="nav-item"> contact </a>
-        </div>
-    </header>
+      
       
       <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+        <a href="#about">about me</a>
+        <a href="#work">my work</a>
+        <a href="#contact">contact</a>
+        <a href="#gallery">gallery of home</a>
+        <a href="#tidbits">tidbits</a>
+        
+        <img src="signature.png" alt="signature" class="signature"/>
       </div>
 
         <br>
-        <p id="para">Håfa Adai! I'm Richard Villagomez.</p>
-
-        <a target="_blank" href="https:https://www.instagram.com/richarrrdv/">My Instagram!</a>
-
-        <p>Hi and welcome to my personal website!</p>
-
-        <img src="babypic.jpg" alt="A pic of me from when I was two years old!" height="300" class="center"/>
-        <h6>pictured: a baby pic of me from when I was two years old :-)</h6>
-        <h1>Table of Contents</h3>
-
+        
+        <img src="group2.png" alt="A pic of me from when I was two years old!" class="main"/>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a id="about"></a>
+        <h1>about me</h1> 
+        <h3>where i'm from</h3>
+        <p>i am from the island of saipan in the commonwealth of the northern marianas islands, also known as the CNMI. we are a commonwealth of the United States, which is the same kind of territory as puerto rico. my home is nearly 6000 miles away from here in the middle of the pacific ocean, near southeast asia. i lived there all my life before moving here for college.</p>
+        <h3>what i like to do</h3>
+        <p>some of my hobbies include playing the guitar, graphic design, playing on my switch, and going running. i also really love exploring the city, grabbing boba and going shopping! </p>
+        <h3>my aspirations</h3>
+        <p>i am currently an intended CS major and although it's been tough for me and i do secretly envy those who make it look soooo easy, i really do believe it'll be worth it. i'm hoping to live here for a while after graduating before returning to Saipan and making an impact there. </p>
+        <a id="work"></a>
+        <h1>my work</h1> 
+        <p>i'm a freshman so to be honest i don't have much professional work at all LOL. however, i will list a couple of my projects from high school because that's truly the closest thing i have.</p>
         <ol>
-            <li>About Me</li>
-            <li>Work</li>
-            <li>Contact</li>
+          <li>congressional app challenge: my senior year of high school, my teacher had us APCSP students enter the congressional app challenge. for my app, my partner and i decided to make an educational app that teaches users about the chamorro language, which is my culture's native language. this app was called "irensia," which is the chamorro word for inheritance, symbolizing our duty to inherit and maintain our language. we ended up placing second in the regional division.</li>
+          <br>
+          <br>
+          <div class ="screenshots">
+            <img src="irensia1.png" alt="Image 1">
+            <img src="irensia2.png" alt="Image 2">
+            <img src="irensia3.png" alt="Image 3">
+          </div>
+          <br>
+          <br>
+          <li>pacific mini games medals table: although i was not directly involved in coding this website, i assisted a web development firm in testing & troubleshooting the website they built to count medals for the 2022 pacific mini games, which was held on my home island this year. 
+          <br>
+            <div>
+            <img src="medaltally.png" alt="Image 3" class="center">
+          </div>
+          </li>
+          <br>
+          <br>
+          <li>that's honestly it lol</li>
+          </div>
         </ol>
-
-        <h2 class="navyblue">About Me!</h2>
-        <h3>My childhood</h3>
-        <p>My name is Richard Villagomez, and I was born and raised on the island of Saipan in the CNMI, or the Commonwealth of the Northern Marianas Islands. I lived there for 17 years, which I still can't believe. Saipan is a 12-mile long island in the middle of the Pacific Ocean, somewhat near South Asia/Oceania. Fun fact: The Marianas Trench is named after the Marianas Islands!</p>
-
-        <h4>My hobbies</h4>
-        <p>Some of my favorite things to do during my free time include playing my guitar, going on runs, watching thrillers or chick-flicks on Netflix, or playing on my Switch. </p>
-        <h5>Pictures from home!</h5>
+        <br>
+        <br>
+        <a id="contact"></a>
+        <h1>contact</h1> 
+        <h4><a target="_blank" href="https://www.instagram.com/richarrrdv/">instagram: richarrrdv</a></h4>
+        <h4>email: richard.villagomez@berkeley.edu</h4>
+        
+        <h2>gallery of my home</h2> 
+        <a id="gallery"></a>
         <div class="gallery"></div>
-            <img src="image1.JPG" class="gallery__img" alt="Image 1">
-            <img src="image2.jpg" class="gallery__img" alt="Image 2">
-            <img src="image3.jpg" class="gallery__img" alt="Image 3">
-        <br> 
-        <div class="container">
-          <img class="item" src="1.JPG" alt="image">
-          <img class="item" src="2.jpg" alt="image">
+            <img src="image1.JPG" class="galleryitem1" alt="Image 1">
+            <img src="image2.jpg" class="galleryitem1" alt="Image 2">
+            <img src="image3.jpg" class="galleryitem1" alt="Image 3">
     
-       </div>
-        <h5>Contact Me</h5>
-        <a target="_blank" href="https:https://www.instagram.com/richarrrdv/">My Instagram!</a>
-        <p> Email: richard.villagomez@berkeley.edu</p>
-        <br> 
-        <button onclick="alert('I am a Virgo, thank you very much')">Click here to find out my Zodiac sign!</button> 
         <br> 
         <br>
+
+        
+        <a id="tidbits"></a>
+        <h2>tidbits</h2> 
+        <h5>find out my zodiac sign!</h5> 
+        <button onclick="alert('i am a virgo! born on september 17')">click here to find out my zodiac sign.</button> 
+        <br>
+        <h6>want to send a message?</h6> 
+        <br>
         <form class = "my-form">
-          <label>Send a message to me here!:</label>
+          <label>send a message to me here!:</label>
           <input type="text" id="message">
           <br>
           <br>
           <input type="submit" onclick="myfunction()"></button>
           <script>
           function myfunction() {
-          alert("Thank you for your message! (~:")
+          alert("thank you for your message! (~:")
           }
         </script>
       </form>
+
+
     </body>
 </html>
